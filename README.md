@@ -1,1 +1,2 @@
 # Sprinkles-Bakery-Mobile-App
+The Sprinkles Bakery mobile app is a native Android application developed in Java with SQLite for data storage. Designed for different user levels, it includes features such as login, category and cupcake management, order processing for admins, and user functionalities like registration, viewing cupcakes, and placing orders. This project was completed as part of the Mobile Application Development assignment.
