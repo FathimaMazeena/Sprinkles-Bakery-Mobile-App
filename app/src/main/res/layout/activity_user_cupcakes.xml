@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image2"
+    tools:context=".UserCupcakes">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/welcomeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="CUPCAKES"
+            android:textColor="@color/titleColor"
+            android:textSize="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <!--
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="520dp"
+                    android:layout_alignParentBottom="true"
+                    app:cardBackgroundColor="@color/containerColor"
+                    app:cardCornerRadius="40dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="40dp"
+                        android:orientation="vertical">
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp" />
+
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="40dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:backgroundTint="@color/listViewColor"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="ADD NEW CAKE ITEM"
+                            android:textColor="@color/blueFont"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:id="@+id/button3"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:backgroundTint="@color/listViewColor"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="DELETE A CAKE ITEM"
+                            android:textColor="@color/blueFont"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:id="@+id/button4"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:backgroundTint="@color/listViewColor"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="EDIT A CAKE ITEM"
+                            android:textColor="@color/blueFont"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1"
+            android:layout_width="match_parent"
+            android:layout_height="520dp"
+            android:layout_alignParentBottom="true"
+            app:cardBackgroundColor="@color/containerColor"
+            app:cardCornerRadius="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!--
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/listViewColor"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="ADD NEW CAKE CATEGORY"
+                    android:textColor="@color/blueFont"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="@color/listViewColor"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="DELETE AN EXISTING CATEGORY"
+                    android:textColor="@color/blueFont"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+-->
+
+
+            <ListView
+                android:id="@+id/userCupcakeListview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="100dp" />
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/user_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/navigationBarColor"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</RelativeLayout>

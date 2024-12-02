@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="backgroundColor">#181825</color>
+    <color name="navigationBarColor">#D7D7DD</color>
+    <color name="buttonColor">#8BD5B4</color>
+    <color name="containerColor">#CC886652</color>
+    <color name="titleColor">#F9DEC9</color>
+    <color name="listViewColor">#F5F5F5</color>
+    <color name="blueFont">#4A4E69</color>
+
+    <color name="extra">#736153</color>
+
+
+
+
+</resources>

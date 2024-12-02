@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_image2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserCart">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/welcomeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="MY CART"
+            android:textColor="@color/titleColor"
+            android:textSize="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview1"
+            android:layout_width="match_parent"
+            android:layout_height="580dp"
+            android:layout_alignParentBottom="true"
+            app:cardBackgroundColor="@color/containerColor"
+            app:cardCornerRadius="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/userCartListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="380dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="35dp"
+                    tools:layout_marginBottom="0dp">
+
+                </ListView>
+
+                <Button
+                    android:id="@+id/placeOrderButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/buttonColor"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:text="PLACE MY ORDER"
+                    android:textColor="@color/backgroundColor" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+       <!-- <androidx.cardview.widget.CardView
+            android:id="@+id/cardview2"
+            android:layout_width="match_parent"
+            android:layout_height="580dp"
+            android:layout_alignParentBottom="true"
+            app:cardBackgroundColor="@color/containerColor"
+            app:cardCornerRadius="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="gone">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Delivery Address"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:id="@+id/deliveryAddressEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_boxes"
+                    android:ems="10"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="Address"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Contact Number"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:id="@+id/contactNumberEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_boxes"
+                    android:ems="10"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="Contact Number"
+                    android:inputType="text" />
+
+
+                <Button
+                    android:id="@+id/confirmOrderButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/buttonColor"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:text="CONFIRM ORDER"
+                    android:textColor="@color/backgroundColor" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        -->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/user_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/navigationBarColor"
+        app:menu="@menu/bottom_navigation_menu" />
+
+
+
+
+</RelativeLayout>

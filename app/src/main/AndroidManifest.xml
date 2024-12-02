@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/sprinkles_logo"
+        android:label="SprinklesBakery"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SprinklesBakery"
+        tools:targetApi="31">
+        <activity
+            android:name=".AdminAccount"
+            android:exported="false" />
+        <activity
+            android:name=".Account"
+            android:exported="false" />
+        <activity
+            android:name=".UserOrders"
+            android:exported="false" />
+        <activity
+            android:name=".UserCupcakeDetails"
+            android:exported="false" />
+        <activity
+            android:name=".UserCupcakes"
+            android:exported="false" />
+        <activity
+            android:name=".UserCart"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryListItem"
+            android:exported="false" />
+        <activity
+            android:name=".UserCategory"
+            android:exported="false" />
+        <activity
+            android:name=".OrderListItemDetails"
+            android:exported="false" />
+        <activity
+            android:name=".EditCupcake"
+            android:exported="false" />
+        <activity
+            android:name=".AddCupcake"
+            android:exported="false" />
+        <activity
+            android:name=".DeleteCupcake"
+            android:exported="false" />
+        <activity
+            android:name=".DeleteCategory"
+            android:exported="false" />
+        <activity
+            android:name=".AddCategory"
+            android:exported="false" />
+        <activity
+            android:name=".OrderListItem"
+            android:exported="false" />
+        <activity
+            android:name=".AdminOders"
+            android:exported="false" />
+        <activity
+            android:name=".AdminCupcakes"
+            android:exported="false" />
+        <activity
+            android:name=".AdminCategory"
+            android:exported="false" />
+        <activity
+            android:name=".CreateNewAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginOrRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.SprinklesBakery" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
